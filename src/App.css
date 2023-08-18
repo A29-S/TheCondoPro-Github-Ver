@@ -1,0 +1,213 @@
+.Text {
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  color: #07364b;
+  font-size: calc(15px);
+  margin: auto;
+
+}
+
+.alert {
+  display: auto;
+  font-size: 0.875rem;
+  text-align: left;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 2rem;
+  border: solid 3px #07364b ;
+  border-radius: 100rem;
+  /* padding-left:2rem;
+  padding-top:2rem;
+  padding-top:2rem; */
+
+}
+
+
+
+.App {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  color: white;
+}
+
+.InputBox {
+  border-radius: 10px;
+  display: auto;
+  text-align: left;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 1rem;
+  font-size: 1rem;
+  padding: .5rem 3rem;
+  color: #07364b;
+  font-weight: bold;
+  border: solid 3px #07364b;
+  background-color:white;
+}
+
+.upload {
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1rem;
+  padding: .5rem 3rem;
+  color: #07364b;
+  font-weight: bold;
+  border: solid 3px #07364b;
+  background-color:white;
+}
+
+/* Make solid button graident */
+Button.Continue {
+    border-radius: 100rem;
+    padding: 1rem;
+    font-size: 1rem;
+    padding: .5rem 3rem;
+    color: #07364b;
+    border: solid 3px #07364b;
+    background-color:white;
+    font-weight: bold;
+  }
+  
+Button.Continue:hover {
+  border-radius: 100rem;
+  box-shadow: 0 0 6px 0 #07364b; 
+  padding: 1rem;
+  font-size: 1rem;
+  padding: .5rem 3rem;
+  color: white;
+  font-weight: bold;
+  border: solid 3px transparent  ;
+  /* background: linear-gradient(101deg,#07364b, #db375d);  */
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg,#52a698, #07364b); 
+  background-size: 400% 400%; 
+  animation: Gradi 5s ease infinite;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  /* -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; */
+}
+
+Button.Back {
+  border-radius: 100rem;
+  padding: 1rem;
+  font-size: 1rem;
+  padding: .5rem 3rem;
+  color: #db375d;
+  border: solid 3px #db375d;
+  background-color:white;
+  font-weight: bold;
+}
+
+Button.Back:hover {
+border-radius: 100rem;
+box-shadow: 0 0 6px 0 #07364b; 
+padding: 1rem;
+font-size: 1rem;
+padding: .5rem 3rem;
+color: white;
+font-weight: bold;
+border: solid 3px transparent  ;
+/* background: linear-gradient(101deg,#07364b, #db375d);  */
+background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg,#e3aec4, #db375d); 
+background-size: 400% 400%; 
+animation: Gradi 5s ease infinite;
+background-origin: border-box;
+background-clip: content-box, border-box;
+/* -webkit-background-clip: text; 
+-webkit-text-fill-color: transparent; */
+}
+
+input {
+  color: #db375d;
+}
+
+html { 
+  height: 100%;    
+  background-color: #07364b;
+  /* background-image: url("./img/.png"); */
+  width: 100%;
+}
+
+
+
+/* make h1 text gradient */
+.h1 {
+  /* min-height: 25vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 1rem;
+  padding: .5rem 3rem;
+  font-size: calc(15px + 2vmin);
+  /* box-shadow: 2px 1000px 1px #fff inset; */
+  background: white;
+  /* background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg,#58a9cd, #07364b); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* border: solid 3px #07364b ;
+  border-radius: 100rem; */
+  /* color: #07364b; */
+}
+
+@keyframes Gradi {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.profile {
+  border-radius: 50%;
+}
+
+.cardBackground {
+  /* background-color:rgba(207, 203, 203, 0.258); */
+  background-color: white;
+  position: -webkit-sticky;
+  
+}
+
+
+@media only screen and (max-device-width: 480px) {
+  .show-card {
+    display: none;
+
+  }
+  .hide-card {
+    display: block;
+  }
+  
+}
+
+
+.cardName {
+  font-weight: bold;
+  color: #07364b;
+  font-size: calc(20px);
+}
+
+.fa-cog {
+  color: #087e8e;
+}
+
+.info {
+  font-size: calc(5px + 2vmin);
+
+}
